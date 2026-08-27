@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>vna</class>
+ <widget class="QWidget" name="vna">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1125</width>
+    <height>578</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="plotWidgetPlaceholder" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>550</width>
+     <height>350</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="getTrace">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>60</y>
+     <width>101</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Read VNA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>411</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>vna name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="traceLabel">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>160</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>traces</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="fstartEntry">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>290</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="fstopEntry">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>290</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fstartLabel">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>260</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>f start</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fstopLabel">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>260</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>f stop</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="NLabel">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>340</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>N</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="NEntry">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>360</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1001</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="tracelistWidget">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>180</y>
+     <width>101</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SelectionMode::MultiSelection</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>S11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>S12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>S21</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>S22</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="reqCtrl">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>40</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Control</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="f_units_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>290</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ymaxEntry">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>71</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-10</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="yminEntry">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>71</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-100</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="format_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>180</y>
+     <width>87</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioA">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>180</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>amp [dB]</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioB">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>210</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>phase [deg]</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="power_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>360</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="format_label">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>160</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>format</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="RF_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>360</y>
+     <width>90</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RF power</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="delay_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>100</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>100</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>delay [ms]</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
