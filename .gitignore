@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyc
+
+# Poetry virtual environment
+.venv/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# macOS / Windows junk
+.DS_Store
+Thumbs.db
+
+# pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Environment files (optional)
+.env
+.env.*
+
+# Compiled Qt UI files (optional)
+*.qrc
